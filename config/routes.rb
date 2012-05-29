@@ -1,5 +1,4 @@
 Kss::Engine.routes.draw do
-  get '/styleguide' => 'home#styleguide'
-  
   root :to => 'home#index'
+  get '/:reference' => 'home#styleguide'
 end
